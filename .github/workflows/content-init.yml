@@ -13,11 +13,11 @@ workflow_dispatch:
 
 # Environment variables are defined so that they can be used throughout the job definitions.
 env:
-  imageRepository: 'content-api'
+  imageRepository: 'content-init'
   resourceGroupName: 'fabmedical-ayadev12'
   containerRegistryName: 'fabmedicalY12'
   containerRegistry: 'fabmedicaly12.azurecr.io'
-  dockerfilePath: './content-web'
+  dockerfilePath: './content-init'
   tag: '${{ github.run_id  }}'
 
 # Jobs define the actions that take place when code is pushed to the main branch
