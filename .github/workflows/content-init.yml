@@ -13,11 +13,11 @@ on:
 
 # Environment variables are defined so that they can be used throughout the job definitions.
 env:
-  imageRepository: 'content-init'
-  resourceGroupName: 'Fabmedical-[SHORT_SUFFIX]'
-  containerRegistryName: 'fabmedical[SHORT_SUFFIX]'
-  containerRegistry: 'fabmedical[SHORT_SUFFIX].azurecr.io'
-  dockerfilePath: './content-init'
+    imageRepository: 'content-api'
+  resourceGroupName: 'fabmedical-ayadev12'
+  containerRegistryName: 'fabmedicalY12'
+  containerRegistry: 'fabmedicaly12.azurecr.io'
+  dockerfilePath: './content-web'
   tag: '${{ github.run_id  }}'
 
 # Jobs define the actions that take place when code is pushed to the main branch
